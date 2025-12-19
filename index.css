@@ -1,143 +1,108 @@
-/* ---------- Base ---------- */
-
-:root {
-    --app-width: 24.7rem;
-    --border-gray: #c6c6c6;
-    --text-primary: #000;
-    --like-red: red;
-}
 
 html, body {
     margin: 0 auto;
     padding: 0;
-    width: var(--app-width);
     font-family: 'Source Sans 3', sans-serif;
+    width: 24.7rem;
 }
 
-/* ---------- Header ---------- */
+/*header*/
 
-header {
-    border-bottom: 1px solid var(--border-gray);
-    margin-bottom: 10px;
-}
-
-.header-container {
-    display: flex;
+header{
+    border-bottom: 1px solid #c6c6c6;
     align-items: center;
-    justify-content: space-between;
 }
 
-/* ---------- Images ---------- */
 
-.avatar,
-#avatar-img,
-.avatar-pic {
+header .header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/*main*/
+
+main{
+    margin: 0 auto;
+}
+
+.useraccount-info{
+    display:flex;
+    flex-direction: column;
+    margin: 15px auto;
+}
+
+.poster-container{
+    display:flex;
+    flex-direction: row;
+}
+
+.username-location{
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.post-interaction{
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+.user-caption{
+    padding-bottom: 10px;
+}
+
+.gap{
+    background-color: #c6c6c6;
+    height: 20px;
+}
+
+/*typography*/
+
+h2,h3{
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.bold{
+    font-weight: 800;
+    margin-left: 0.3rem;
+}
+
+.usertext{
+    font-size: 0.9rem; 
+    font-weight: 500;
+    margin-left: 0.3rem;
+    display: inline;
+}
+
+/* images */
+
+#oldagram-logo{
+    width: 130px;
+    height: 55px;
+}
+
+.avatar-img, #avatar-img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
-#oldagram-logo {
-    width: 130px;
-    height: 55px;
+.avatar-img, .likes, .user-caption{
+    margin-left: 10px;
+    margin-bottom: 0px;
 }
 
-.post {
-    width: var(--app-width);
-    height: var(--app-width);
+.post-img{
+    width: 395px;
+    height: 395px;
     margin: 0;
 }
 
-/* ---------- Typography ---------- */
-
-.name,
-.bold {
-    font-size: 1rem;
-    font-weight: 700;
-    margin: 0;
-}
-
-.location {
-    font-size: 0.9rem;
-    margin: 0;
-}
-
-.post-text {
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 0;
-}
-
-/* ---------- Post Header ---------- */
-
-.posts-start {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.icon-img{
+    width: 35px;
+    height: 35px;
     margin: 5px;
 }
 
-.post-header {
-    display: flex;
-    flex-direction: column;
-}
-
-/* ---------- Post Actions ---------- */
-
-.post-interaction {
-    display: flex;
-    align-items: center; 
-    gap: 15px;           
-    margin: 5px;
-}
-
-.like-icons {
-    display: flex;
-    align-items: start; 
-    gap: 8px;            
-    font-size: 1rem;
-    font-weight: 800;
-    flex-direction: column;
-}
-
-.like-count{
-    font-size: 1rem;
-}
-.post-icons {   display: flex;
-    flex-direction: row;
-    cursor: pointer;     
-}
-
-.icon-img {
-    width: 40px;
-    height: 40px;
-}
-
-/* ---------- Icons ---------- */
-
-.fa-heart {
-    font-size: 2.25rem;
-    color: var(--text-primary);
-    cursor: pointer;
-    transition: transform 0.15s ease, color 0.15s ease;
-}
-
-.fa-heart:hover {
-    transform: scale(1.1);
-}
-
-.liked {
-    color: var(--like-red);
-}
-
-/* ---------- Post Caption ---------- */
-.caption{
-    margin: 10px;
-}
-
-/* ---------- Utility ---------- */
-
-.gap {
-    height: 20px;
-    background-color: var(--border-gray);
-}

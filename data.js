@@ -1,6 +1,6 @@
-import { v4 as uuidv4 } from 'https://jspm.dev/uuid'
+export { postsData } from './data.js'
 
-export const postsData = [
+const postsData = [
     {
         name: "Vincent van Gogh",
         username: "vincey1853",
@@ -8,9 +8,7 @@ export const postsData = [
         avatar: "images/avatar-vangogh.jpg",
         post: "images/post-vangogh.jpg",
         comment: "just took a few mushrooms lol",
-        likes: 21,
-        isLiked: false,
-        uuid: uuidv4()
+        likes: 21
     },
     {
         name: "Gustave Courbet",
@@ -19,19 +17,16 @@ export const postsData = [
         avatar: "images/avatar-courbet.jpg",
         post: "images/post-courbet.jpg",
         comment: "i'm feelin a bit stressed tbh",
-        likes: 4,
-        isLiked: false,
-        uuid: uuidv4()
+        likes: 4
     },
-    {
+        {
         name: "Joseph Ducreux",
         username: "jd1735",
         location: "Paris, France",
         avatar: "images/avatar-ducreux.jpg",
         post: "images/post-ducreux.jpg",
         comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
-        likes: 152,
-        isLiked: false,
-        uuid: uuidv4()
+        likes: 152
     }
 ]
+
